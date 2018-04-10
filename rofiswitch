@@ -1,0 +1,12 @@
+#! /bin/bash
+
+answers=$'Extend left\nExtend Right\nCopy'
+answer=$(echo "$answers" | rofi -dmenu -i -p "Projection")
+
+if [ "$answer" == "Extend Left" ]; then
+	xrandr --output VGA-1 --left-of LVDS-1 --auto
+elif [ "$answer" == "Extend Right" ]; then
+	xrandr --output VGA-1 --right-of LVDS-1 --auto
+elif [ "$answer" == "Copy" ]; then
+	xrandr --output VGA-1 --auto
+fi

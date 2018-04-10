@@ -1,0 +1,11 @@
+#! /bin/bash
+answers=$'Shutdown now\nReboot\nNo'
+answer=$(echo "$answers" | rofi -dmenu -i -p "Shutdown or Reboot?")
+
+if [ "$answer" == "Shutdown now" ]; then
+	shutdown -h 0
+elif [ "$answer" == "Reboot" ]; then
+	reboot
+elif [ "$answer" == "No" ]; then 
+	rofi -e "<span color='green'><b>System will resume</b></span>" -markup
+fi
