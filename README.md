@@ -1,13 +1,6 @@
 # Custom bash scripts
 
-I have some scripts which I use to make the routines easy in my computer.
-
-* rofishut
-* rofiswitch
-
-`rofishut` is a handy shutdown/reboot tool which takes the users input as shutdown/reboot/continue and does exactly that.
-
-`rofiswitch` takes users input as extend left, extend right and copy and deal with the VGA output to give the correct VGA out.
+I have some scripts which I use to make the routines easy in my computer. `actionmenu` has some handy scripts to shutdown, reboot, extend screen to a monitor.
 
 You can add the scripts folder to the PATH variable and fix some keyboard shortcuts via your window manager
 
@@ -20,7 +13,6 @@ Since I am using i3,
 
 ``` bash
 # ~/.config/i3/config
-bindsym $mod+BackSpace exec rofishut
-bindsym $mod+p exec rofiswitch
+bindsym $mod+BackSpace exec actionmenu
 ```
 
