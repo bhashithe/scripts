@@ -1,4 +1,4 @@
-# Custom bash scripts
+# Custom ~~bash~~ scripts
 
 I have some scripts which I use to make the routines easy in my computer. `actionmenu` has some handy scripts to shutdown, reboot, extend screen to a monitor.
 
